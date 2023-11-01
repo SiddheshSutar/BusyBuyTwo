@@ -1,0 +1,31 @@
+{
+  "name": "busy-buy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 7070",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
+    "antd": "^5.9.2",
+    "axios": "^1.5.0",
+    "firebase": "^10.4.0",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-redux": "8.0.5",
+    "react-scripts": "5.0.1",
+    "redux": "4.2.1",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.16.0",
+    "sass": "^1.66.1",
+    "zingtouch": "^1.0.6"
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../assets/scss/_variables.scss' as variables;
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 22;
+    background-color: variables.$dark-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: variables.$outer-padding;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .side-nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

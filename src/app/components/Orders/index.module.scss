@@ -1,0 +1,76 @@
+.orders-container {
+
+    .order-obj-wrapper {
+
+        border: 1px solid grey;
+    }
+    
+    .order-table {
+        
+        width: 100%;
+        
+        thead {
+            background-color: #c8c6c6;
+            color: #fff;
+        }
+
+        th,
+        td {
+            padding: 20px;
+        }
+        
+        th {
+            letter-spacing: 3px;
+        }
+        td {
+            text-align: center;
+        }
+
+        tbody {
+            tr:nth-child(even) {
+                background-color: #c5e1f0;
+            }
+            tr {
+
+                td {
+                    border-color: #c5e1f0;
+                    letter-spacing: 1px;
+                }
+                
+                td:has(img) {
+                    width: 200px;
+                    padding: 0;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                td:nth-child(1) {
+                    border-color: transparent;
+                }
+
+                td:last-child {}
+            }
+        }
+    }
+
+    .timestamp-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div {
+            letter-spacing: 2px;
+            font-weight: 200;
+            font-family: monospace;
+            font-size: 1rem;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+
+    }
+}

@@ -1,0 +1,98 @@
+@use '../../assets/scss/variables' as variables;
+
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button.action-button {
+        background-color: variables.$dark-bg;
+        border: 2px solid #1976d2;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+        padding: 8px 11px;
+        transition: all 0.2s ease-in-out;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 18px;
+        line-height: 1;
+        width: 100%;
+
+        &:hover {
+            text-shadow: 1px 0px 3px white;
+            transform: scale(1.03);
+        }
+    }
+
+    
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 100%;
+
+    .product {
+        border: 1px;
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        .image {
+            object-fit: contain;
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+
+        .title {
+            font-size: 1.4rem;
+        }
+
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+
+            .quantity-row {
+                display: grid;
+                grid-template-columns: 20px 10ch 20px;
+                place-items: center;
+
+                button {
+                    background-color: transparent;
+                    border-color: transparent;
+                    padding: 10px;
+                    line-height: 1;
+                    font-size: 1.5rem;
+                    transition: all 0.2s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 2px solid variables.$light-bg;
+                    }
+                }
+
+                .quantity,
+                button {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+
+            .price {
+                font-size: 1.8rem;
+                font-weight: bold;
+                font-style: italic;
+                letter-spacing: 2px;
+                color: variables.$dark-bg;
+                line-height: 2;
+            }
+
+            .action-button {}
+        }
+
+    }
+}

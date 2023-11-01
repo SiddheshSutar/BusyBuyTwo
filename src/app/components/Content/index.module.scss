@@ -1,0 +1,5 @@
+@use '../../assets/scss/_variables.scss' as variables;
+
+.red {
+    padding: variables.$outer-padding;
+}
